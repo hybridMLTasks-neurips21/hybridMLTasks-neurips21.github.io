@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html>
+<script type="text/javascript">
+  $("nav").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
+</script>
+<html stylr="scroll-behavior: smooth;">
   <head>
     <title>Solving hybrid machine learning tasks by traversing weight space geodesics</title>
   </head>
   <body>
-    <div align="center"><h1><a href="lorem-ipsum.pdf">lorem-ipsum.pdf</a></h1><br>
-    <iframe src="lorem-ipsum.pdf" width="75%" height="1000px">
-    </iframe></div>
+  	<nav>
+	    <a href="#paper1">Paper 1</a>
+	    <a href="#paper2">Paper 2</a>
+	    <a href="#paper3">Paper 3</a>
+	    <a href="#paper4">Paper 4</a>
+	</nav>
 
-    <div align="center"><h1><a href="lorem-ipsum.pdf">lorem-ipsum.pdf</a></h1><br>
-    <iframe src="lorem-ipsum.pdf" width="75%" height="1000px">
+    <div id="paper1" align="center"><h1><a href="lorem-ipsum.pdf">lorem-ipsum1.pdf</a></h1><br>
+    <iframe src="lorem-ipsum.pdf" width="50%" height="1000px">
+    </iframe></div>
+    <br>
+    <div id="paper2" align="center"><h1><a href="lorem-ipsum.pdf">lorem-ipsum2.pdf</a></h1><br>
+    <iframe src="lorem-ipsum.pdf" width="50%" height="1000px">
+    </iframe></div>
+    <br>
+    <div id="paper3" align="center"><h1><a href="lorem-ipsum.pdf">lorem-ipsum3.pdf</a></h1><br>
+    <iframe src="lorem-ipsum.pdf" width="50%" height="1000px">
+    </iframe></div>
+    <br>
+    <div id="paper4" align="center"><h1><a href="lorem-ipsum.pdf">lorem-ipsum4.pdf</a></h1><br>
+    <iframe src="lorem-ipsum.pdf" width="50%" height="1000px">
     </iframe></div>
   </body>
 </html>
